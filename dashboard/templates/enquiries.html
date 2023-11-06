@@ -1,0 +1,228 @@
+{%extends 'base.html'%}
+{%block body_block%}
+
+		<!-- Main Content -->
+		<div class="hk-pg-wrapper pb-0">
+			<!-- Page Body -->
+			<div class="hk-pg-body py-0">
+				<div class="container-fluid">
+					<div class="row p-3">
+						<div class="col-12 mt-2">
+								<h4>All Orders</h4>
+						</div>
+
+						<div class="col-12 card shadow">
+								<div class="row">
+<!--									<div class="col-12 p-3">-->
+<!--										<h6 class="fw-semibold">Select date range</h6>-->
+<!--									</div>-->
+<!--									<form action="">-->
+<!--										<div class="row">-->
+<!--											<div class="col-12 col-md-3">-->
+<!--												<p class="mb-1">Select Branch</p>-->
+<!--												<select name="" id="" class="form-select">-->
+<!--													<option selected>Open this select menu</option>-->
+<!--													<option value="1">s</option>-->
+<!--													<option value="2">s</option>-->
+<!--													<option value="3">s</option>-->
+<!--												</select>-->
+<!--											</div>-->
+<!--											<div class="col-12 col-md-3">-->
+<!--												<p class="mb-1">Start date</p>-->
+<!--												<input type="date" class="form-control">-->
+<!--											</div>-->
+<!--											<div class="col-12 col-md-3">-->
+<!--												<p class="mb-1">End Date</p>-->
+<!--												<input type="date" class="form-control">-->
+<!--											</div>-->
+<!--											<div class="col-12 col-md-3 mt-4 mt-md-0">-->
+<!--													<div class="d-flex align-items-end h-100 gap-3">-->
+<!--														<button class="btn btn-secondary w-100">Clear</button>-->
+<!--														<button class="btn w-100" style="background-color: #FC6A57;color: white;">Show Data</button>-->
+<!--													</div>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--									</form>-->
+                                    <div class="px-4 mt-4">
+                                        <div class="row g-2">
+                                            <div class="col-sm-6 col-lg-3">
+                                                <a class="order--card h-100" href="#">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
+                                                            <img src="./dist/img/pending.png" alt="dashboard" class="oder--card-icon">
+                                                            <span>Pending</span>
+                                                        </h6>
+                                                        <span class="card-title text-0661CB">
+                                                        0
+                                                </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-sm-6 col-lg-3">
+                                                <a class="order--card h-100" href="https://ccin.in/test/admin/orders/list/confirmed">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
+                                                            <img src="https://ccin.in/test/public/assets/admin/img/icons/confirmed.png" alt="dashboard" class="oder--card-icon">
+                                                            <span>Confirmed</span>
+                                                        </h6>
+                                                        <span class="card-title text-107980">
+                                                    0
+                                                </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-sm-6 col-lg-3">
+                                                <a class="order--card h-100" href="https://ccin.in/test/admin/orders/list/processing">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
+                                                            <img src="https://ccin.in/test/public/assets/admin/img/icons/packaging.png" alt="dashboard" class="oder--card-icon">
+                                                            <span>Processing</span>
+                                                        </h6>
+                                                        <span class="card-title text-danger">
+                                                    0
+                                                </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-sm-6 col-lg-3">
+                                                <a class="order--card h-100" href="https://ccin.in/test/admin/orders/list/out_for_delivery">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
+                                                            <img src="https://ccin.in/test/public/assets/admin/img/icons/out_for_delivery.png" alt="dashboard" class="oder--card-icon">
+                                                            <span>Out for delivery</span>
+                                                        </h6>
+                                                        <span class="card-title text-00B2BE">
+                                                    0
+                                                </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-sm-6 col-lg-3">
+                                                <a class="order--card h-100" href="https://ccin.in/test/admin/orders/list/delivered">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
+                                                            <img src="https://ccin.in/test/public/assets/admin/img/icons/delivered.png" alt="dashboard" class="oder--card-icon">
+                                                            <span>Delivered</span>
+                                                        </h6>
+                                                        <span class="card-title text-success">
+                                                    0
+                                                </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <!-- Static Cancel -->
+                                            <div class="col-sm-6 col-lg-3">
+                                                <a class="order--card h-100" href="https://ccin.in/test/admin/orders/list/canceled">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
+                                                            <img src="https://ccin.in/test/public/assets/admin/img/icons/canceled.png" alt="dashboard" class="oder--card-icon">
+                                                            <span>Canceled</span>
+                                                        </h6>
+                                                        <span class="card-title text-danger">
+                                                    0
+                                                </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <!-- Static Cancel -->
+
+                                            <div class="col-sm-6 col-lg-3">
+                                                <a class="order--card h-100" href="https://ccin.in/test/admin/orders/list/returned">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
+                                                            <img src="https://ccin.in/test/public/assets/admin/img/icons/returned.png" alt="dashboard" class="oder--card-icon">
+                                                            <span>Returned</span>
+                                                        </h6>
+                                                        <span class="card-title text-warning">
+                                                    0
+                                                </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3">
+                                                <a class="order--card h-100" href="https://ccin.in/test/admin/orders/list/failed">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
+                                                            <img src="https://ccin.in/test/public/assets/admin/img/icons/failed_to_deliver.png" alt="dashboard" class="oder--card-icon">
+                                                            <span>Failed to deliver</span>
+                                                        </h6>
+                                                        <span class="card-title text-danger">
+                                                    0
+                                                </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+<!--									<div class="col-12 col-md-6 mt-4">-->
+<!--										<form action="" class="d-flex">-->
+<!--											<input type="text" class="form-control order-search-input" placeholder="Search by Order ID  Order Status or Transaction Reference">-->
+<!--											<button class="btn h-100" style="background-color: #FC6A57;color: white;border-radius: 0 5px 5px 0;">Search</button>-->
+<!--										</form>-->
+<!--									</div>-->
+<!--									<div class="col-12 col-md-6 mt-3 mt-md-0">-->
+<!--										<div class="d-flex justify-content-end align-items-end h-100">-->
+<!--											-->
+<!--												<div class="dropdown">-->
+<!--													<a class="btn dropdown-toggle order&#45;&#45;excel-export" href="#" role="button"  data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--													  Export-->
+<!--													</a>-->
+<!--												  -->
+<!--													<ul class="dropdown-menu">-->
+<!--													  <li><a class="dropdown-item" href="#" >-->
+<!--														<span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 48 48">-->
+<!--														<path fill="#169154" d="M29,6H15.744C14.781,6,14,6.781,14,7.744v7.259h15V6z"></path><path fill="#18482a" d="M14,33.054v7.202C14,41.219,14.781,42,15.743,42H29v-8.946H14z"></path><path fill="#0c8045" d="M14 15.003H29V24.005000000000003H14z"></path><path fill="#17472a" d="M14 24.005H29V33.055H14z"></path><g><path fill="#29c27f" d="M42.256,6H29v9.003h15V7.744C44,6.781,43.219,6,42.256,6z"></path><path fill="#27663f" d="M29,33.054V42h13.257C43.219,42,44,41.219,44,40.257v-7.202H29z"></path><path fill="#19ac65" d="M29 15.003H44V24.005000000000003H29z"></path><path fill="#129652" d="M29 24.005H44V33.055H29z"></path></g><path fill="#0c7238" d="M22.319,34H5.681C4.753,34,4,33.247,4,32.319V15.681C4,14.753,4.753,14,5.681,14h16.638 C23.247,14,24,14.753,24,15.681v16.638C24,33.247,23.247,34,22.319,34z"></path><path fill="#fff" d="M9.807 19L12.193 19 14.129 22.754 16.175 19 18.404 19 15.333 24 18.474 29 16.123 29 14.013 25.07 11.912 29 9.526 29 12.719 23.982z"></path>-->
+<!--														</svg></span> excel</a></li> -->
+<!--													</ul>-->
+<!--												  </div>-->
+<!--										</div>-->
+<!--									</div>-->
+
+									<div class="py-4">
+										<div class="table-responsive datatable-custom">
+											<table class="table table-hover table-borderless table-thead-bordered table-nowrap table-align-middle card-table">
+												<thead class="thead-light">
+													<tr>
+														<th>No</th>
+														<th>Name</th>
+														<th>Email</th>
+														<th>Phone</th>
+														<th>Message</th>
+														<th>Status</th>
+														<th class="text-center">Actions</th>
+													</tr>
+												</thead>
+
+												<tbody id="set-rows">
+                                                {%for enq in enquiries%}
+													<tr>
+														<td>{{enq.id}}</td>
+														<td>{{enq.name}}</td>
+														<td>{{enq.email}}</td>
+														<td>{{enq.phone}}</td>
+														<td>{{enq.message}}</td>
+														<td>{{enq.status}}</td>
+														<td><a href="{%url 'edit_enquiries' enq.id%}">Edit</a></td>
+													  </tr>
+                                                {%endfor%}
+												</tbody>
+											</table>
+
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Page Body -->
+		</div>
+		<!-- /Main Content -->
+
+
+{%endblock%}
